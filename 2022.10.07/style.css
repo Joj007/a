@@ -1,0 +1,73 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(QuickKissPersonalUse-PxlZ.ttf);
+  }
+
+body{
+    background-color: darkred;
+    overflow-x: hidden;
+
+}
+
+div{
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: darkgreen;
+    margin: 30px;
+    border-color: goldenrod;
+    border: goldenrod 35px ridge;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    font-size: 50px;
+    padding: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+li:nth-child(odd){
+    position: relative;
+    top: 30px;
+}
+
+li:first-child{
+    position: relative;
+    top: -10px;
+    transform: rotate(-90deg);
+}
+
+div::-webkit-scrollbar {
+    width: 5px;
+}
+
+div::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, white , gray);
+    background-color: line;
+    border-radius: 10px;
+}
+/*
+div::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, lightgray , darkgray);
+}
+*/
+
+h1{
+    color: white;
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 100;
+    transition: 0.3s;
+    transform: scaleX(1.5);
+}
